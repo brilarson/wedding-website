@@ -1,2 +1,2 @@
-# wedding-website
+# Wedding Website
 Bri and Josh wedding website.
