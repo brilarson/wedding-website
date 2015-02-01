@@ -103,7 +103,6 @@ nav a:focus {
 }
 
 .section--image{
-    background-image:url("images/Hero_Image.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
