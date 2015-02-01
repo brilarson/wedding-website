@@ -1,96 +1,110 @@
 body,
 html {
-  margin:0;
-  padding:0;
-  font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
-  max-width:100%;
-  height:auto;
+    max-width:100%;
+    height:auto;
 }
 
 p {
-  margin-top:0;
+    margin-top:0;
 }
 
 h2 {
-  text-align:center;
+    text-align:center;
 }
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .wrapper {
-  max-width:1000px;
-  margin:0 auto;
-  overflow:auto;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:auto;
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+    padding-top: 40%;
+    overflow: hidden;
 }
 
 .hero img {
-  width:100%;
+    width:100%;
+    position: absolute;
+    top: -25%; /* Center it */
+    left: 0;
 }
 
 nav {
-  text-align:center;
+    text-align:center;
 }
 
 nav a {
-  text-decoration:none;
-  display:inline-block;
-  padding:20px;
-  background:#00008A;
-  color:white;
-  width:50%;
-  float:left;
-  border-right:1px solid white;
+    text-decoration:none;
+    display:inline-block;
+    padding:20px;
+    background:#00008A;
+    color:white;
+    width:50%;
+    float:left;
+    border-right:1px solid white;
 }
 
 nav a:nth-child(even){
-  border-right:none;
+    border-right:none;
 }
 
 .section {
-  padding:4rem 0;
+    padding:4rem 0;
 }
 
 .header {
-  background:#efefef;
+    background: #efefef;
+}
+
+.header .wrapper {
+    padding: 0;
 }
 
 .section--image{
-  background-image:url("images/Hero_Image.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment:fixed;
-  padding-top:30%;
+    background-image:url("images/Hero_Image.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    padding-top:30%;
 }
 
 
 @media (min-width:700px){
-  nav a {
-    width:25%;
-    border-right:1px solid white;
-  }
-  nav a:nth-child(even){
-    border-right:1px solid white;
-  }
-  nav a:last-child{
-    border-right:none;
-  }
+    nav a {
+        width:25%;
+        border-right:1px solid white;
+    }
+    nav a:nth-child(even){
+        border-right:1px solid white;
+    }
+    nav a:last-child{
+        border-right:none;
+    }
 
-  .section--2-columns .text{
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    -o-columns: 2;
-    columns: 2;
-  }
-  .section--2-columns .text p{
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
+    .section--2-columns .text{
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        -o-columns: 2;
+        columns: 2;
+    }
+    .section--2-columns .text p{
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
 }
