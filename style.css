@@ -41,6 +41,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 2em;
+    margin: 0 0 2rem;
 }
 
 * {
@@ -96,6 +97,10 @@ nav a:focus {
 
 .section {
     padding:4rem 0;
+}
+
+.section--alt {
+    background: #E2D7D1;
 }
 
 .header .wrapper {
