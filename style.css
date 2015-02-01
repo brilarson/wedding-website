@@ -2,12 +2,34 @@ body,
 html {
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Lora', serif;
+    background: #efefef;
 }
 
 img {
     max-width:100%;
     height:auto;
+}
+
+figure {
+    padding: 1rem;
+    background: #E7E8F4;
+    margin: 0 0 1rem;
+}
+
+figure img {
+    display: block;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+figcaption > *:last-child {
+    margin-bottom: 0;
 }
 
 p {
@@ -16,6 +38,9 @@ p {
 
 h2 {
     text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
 }
 
 * {
@@ -44,31 +69,33 @@ h2 {
     left: 0;
 }
 
+.header {
+    background: rgba(255,255,255,0.9);
+}
+
 nav {
     text-align:center;
+    overflow: hidden;
 }
 
 nav a {
     text-decoration:none;
     display:inline-block;
     padding:20px;
-    background:#00008A;
-    color:white;
+    color:#5B7CA5;
     width:50%;
     float:left;
-    border-right:1px solid white;
+    font-size: 1.1em;
 }
 
-nav a:nth-child(even){
-    border-right:none;
+nav a:hover,
+nav a:focus {
+    background: #5B7CA5;
+    color: #fff;
 }
 
 .section {
     padding:4rem 0;
-}
-
-.header {
-    background: #efefef;
 }
 
 .header .wrapper {
@@ -83,17 +110,22 @@ nav a:nth-child(even){
     padding-top:30%;
 }
 
+.text {
+    max-width: 40em;
+    font-size: 1.2em;
+    margin: 0 auto;
+    line-height: 1.5;
+}
 
 @media (min-width:700px){
+    .header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateY(-100%);
+    }
     nav a {
         width:25%;
-        border-right:1px solid white;
-    }
-    nav a:nth-child(even){
-        border-right:1px solid white;
-    }
-    nav a:last-child{
-        border-right:none;
     }
 
     .section--2-columns .text{
