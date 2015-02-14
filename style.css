@@ -139,12 +139,17 @@ nav a:focus {
 }
 
 @media (min-width:700px){
+    h2 {
+        font-size: 3em;
+    }
+
     .header {
         position: absolute;
         left: 0;
         right: 0;
         transform: translateY(-100%);
     }
+
     nav a {
         width:25%;
     }
