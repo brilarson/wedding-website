@@ -50,6 +50,10 @@ h2 {
     margin: 0 0 2rem;
 }
 
+h3 {
+    font-size: 1.4em;
+}
+
 .color-bar {
     background: rgb(236, 178, 72);
     padding: 1rem;
@@ -176,5 +180,9 @@ nav a:focus {
 
     .g-2up > .gi {
         width: 50%;
+    }
+
+    .g-3up > .gi {
+        width: 33.3333%;
     }
 }
