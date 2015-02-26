@@ -42,6 +42,18 @@ figcaption > *:last-child {
     margin-bottom: 0;
 }
 
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 1em;
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #384C66;
+    text-align: right;
+    border-right: 3px solid currentColor;
+}
+
 p {
     margin-top:0;
 }
