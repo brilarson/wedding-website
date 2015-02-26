@@ -146,7 +146,6 @@ nav a:focus {
 .section--image{
     background-repeat:no-repeat;
     background-size:cover;
-    background-attachment:fixed;
     padding-top:30%;
 }
 
@@ -185,6 +184,10 @@ nav a:focus {
 
     nav a {
         width:25%;
+    }
+
+    .section--image {
+        background-attachment:fixed;
     }
 
     .section--2-columns .text{
